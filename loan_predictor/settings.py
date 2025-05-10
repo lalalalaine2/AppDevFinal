@@ -130,7 +130,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Add login/logout redirect URLs
 # Authentication settings
-# Add this to your settings.py
 LOGIN_URL = 'login'
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = 'login'
+LOGIN_REDIRECT_URL = 'dashboard'  # Change this to redirect to dashboard after login
+LOGOUT_REDIRECT_URL = 'home'  # Change this to redirect to home after logout
